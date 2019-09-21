@@ -3,12 +3,29 @@
 
 
 <div class="wrapper">
-  <form class="main-form">
+  <div class="main-form">
     <h4 class="form-title text-center">Please enter the URL</h4>
-    <input type="url" class="form-control" name="inputAddress" placeholder="Please input your url.. " required="" autofocus="" />
-    <button class="btn btn-lg btn-primary btn-block" (click)="onSubmit()">Shorten</button>
-  </form>
+    <input type="url" class="form-control" [formControl]="inputUrl" placeholder="Please input your url.. " required=""
+      autofocus="" />
+    <button class="btn btn-lg btn-primary btn-block" (click)="onsubmit()">Shorten</button>
+  </div>
 
+</div>
+
+<div class="display-url">
+  <p>
+    Long url
+  </p>
+  <div class="box">
+    {{inputUrl.value}}
+  </div>
+
+  <p>
+    Shorten Url
+  </p>
+  <div class="box">
+    {{inputUrl.value}}
+  </div>
 </div>
 
 

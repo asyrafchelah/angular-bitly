@@ -7,20 +7,27 @@ body{
     margin: 80px;
 }
 
-.main-form{
+.main-form, .display-url{
     max-width: 900px;
     margin:0 auto;
     background-color: #ffffff;
-    padding:15px 40px 50px;
+    padding:15px 30px 40px;
     border:1px solid #e5e5e5;
     border-radius: 10px;
 
 }
 
-.main-form .form-title{
+.form-title{
     margin-bottom: 30px;
 }
 
-.main-form input[type="url"]{
-    margin-bottom: 30px;
+button{
+    margin-top: 30px;
 }
+
+.box{
+    border:1px solid #e5e5e5;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+    }
