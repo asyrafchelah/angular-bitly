@@ -5,9 +5,8 @@
 <div class="wrapper">
   <div class="main-form">
     <h4 class="form-title text-center">Please enter the URL</h4>
-    <input type="url" class="form-control" [formControl]="inputUrl" placeholder="Please input your url.. " required=""
-      autofocus="" />
-    <button class="btn btn-lg btn-primary btn-block" (click)="onsubmit()">Shorten</button>
+    <input type="url" class="form-control" [formControl]="inputUrl" placeholder="Please enter your url.." required="" autofocus="" value =""/>
+    <button class="btn btn-lg btn-primary btn-block" (ngSubmit)="onsubmit()">Shorten</button>
   </div>
 
 </div>
@@ -23,9 +22,9 @@
   <p>
     Shorten Url
   </p>
-  <div class="box">
-    {{inputUrl.value}}
-  </div>
+  <!-- <div class="box">
+    {{ }}
+  </div> -->
 </div>
 
 
